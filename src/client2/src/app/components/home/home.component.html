@@ -1,0 +1,27 @@
+<div class="col s12">
+    <div class="row">
+        <h5 class="center-align">Informations des utilisateurs</h5>
+        <div class="block-table">
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Users</th>
+                        <th>MDP</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of users">
+                        <td>{{item.name}}</td>
+                        <td>{{item.password}}</td>
+                        <td>{{item.dateCreate | toShortDate }}</td>
+                        <td>
+                            <a (click)="deleteLogin(item._id)" class="btn-floating waves-effect waves-light red"><i class="material-icons">delete</i></a>
+                            <a (click)="updateLogin(item)" class="btn-floating waves-effect waves-light blue"><i class="material-icons">create</i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
