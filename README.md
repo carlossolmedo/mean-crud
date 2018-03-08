@@ -1,5 +1,5 @@
 ## MEAN - CRUD
-CRUD with MongoDB Express Node.js Angular5
+CRUD with MongoDB - Express - Node.js - Angular5
 
 Installation
 ------------
@@ -15,7 +15,7 @@ Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:42
 
 Development server Node.js
 --------------------------
-Run `npm start` or `npm run dev` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you run `npm run dev`and if you change any of the source files.
 
 Build
 -----
