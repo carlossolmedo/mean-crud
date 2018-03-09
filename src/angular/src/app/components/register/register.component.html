@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="container">
+        <div class="col s12">
+            <div class="row">
+                <div class="card-center">
+                    <div class="card">
+                        <div class="card-content black-text">
+                            <span class="card-title center-align">Sign up</span>
+                            <form #registerForm="ngForm" (ngSubmit)="register(registerForm.value)">
+                                <div class="input-field">
+                                    <input ngModel id="newName" name="name" type="text" class="validate" required>
+                                    <label for="newName">Username</label>
+                                </div>
+                                <div class="input-field">
+                                    <input ngModel id="newPassword" name="password" type="password" class="validate" required>
+                                    <label for="newPassword">Password</label>
+                                </div>
+                                <div class="center-align">
+                                    <button class="btn waves-effect waves-light green" [disabled]="!registerForm.form.valid" type="submit">Sign up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-action center-align">
+                            <a routerLink="/login">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

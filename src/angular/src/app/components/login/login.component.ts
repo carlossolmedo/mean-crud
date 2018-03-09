@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
     }
 
     refreshFlag() {
-        this.isAuthenticated = true;
         this.welcomeMessage = 'Welcome';
         this.router.navigate(['/welcome']);
 
@@ -56,6 +55,7 @@ export class LoginComponent implements OnInit {
         this.loginData = data;
         this.refreshFlag();
         localStorage.setItem('login-data', JSON.stringify(data));
+        this.isAuthenticated = true;
     }
 
     handleLoginFailure(error) {

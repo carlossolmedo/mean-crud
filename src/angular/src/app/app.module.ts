@@ -13,6 +13,7 @@ import { ToShortDatePipe } from './pipes/to-short-date.pipe';
 import { SearchComponent } from './components/search/search.component';
 import { AuthService } from "./services/auth.service";
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
         PageNotFoundComponent,
         ToShortDatePipe,
         SearchComponent,
-        WelcomeComponent
+        WelcomeComponent,
+        RegisterComponent
     ],
     imports: [
         BrowserModule,

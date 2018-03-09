@@ -3,3 +3,19 @@ body, html {
     margin: 0;
     box-sizing: border-box;
 }
+
+div.main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/images/bg-computer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-center {
+    width: 35%;
+    margin: auto;
+    transform: translateY(71%);
+}
